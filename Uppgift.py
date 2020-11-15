@@ -1,15 +1,14 @@
 while True:
-    startvalue = int(input('write a start value '))
+    startvalue = float(input('write a start value '))
     if startvalue <=0:
-          
-        print('write a number that is not <=0')
+        print('enter a number that is not <=0')
         break
-    elif startvalue >0.01:
+    elif startvalue >0:
         value = startvalue
-        while startvalue <1000000:
-            startvalue * startvalue 
-
-            days = startvalue/value
-            days=int(days)
-            print(f'it takes {days} days')
-            break
+        days = 0
+        while value <1000000:
+            days += 1
+            value *= 2
+            print(value)
+        print(f'it takes {days} days')
+        break
