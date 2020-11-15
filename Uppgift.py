@@ -12,3 +12,4 @@ while True:
             days = startvalue/value
             days=int(days)
             print(f'it takes {days} days')
+            break
